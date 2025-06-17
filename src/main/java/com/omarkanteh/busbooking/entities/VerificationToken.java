@@ -10,24 +10,21 @@ import java.time.LocalDateTime;
 @Entity
 @AllArgsConstructor
 @Data
-@Table(name = "verification_confirmation")
+@Table(name = "verification_token")
 @NoArgsConstructor
-public class VerificationConfirmation {
+public class VerificationToken {
     @Id
-    private long id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 
-    @Column(name = "verification_token")
-    private String verificationToken;
+
+    private String token;
 
     @OneToOne
-    @MapsId
     @JoinColumn(name = "user_id")
     private User user;
 
-    private LocalDateTime createdAt;
+    @Column(name = "expired_at")
+    private LocalDateTime expiredAt;
 
-    @PrePersist
-    public void prePersist() {
-        this.createdAt = LocalDateTime.now();
-    }
 }

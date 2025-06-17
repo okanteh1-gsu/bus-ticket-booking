@@ -1,4 +1,10 @@
 package com.omarkanteh.busbooking.dto;
 
-public interface ResetPasswordRequest {
+import lombok.Data;
+
+@Data
+public class ResetPasswordRequest {
+    private String token;
+    private String newPassword;
+
 }

@@ -1,4 +1,7 @@
 package com.omarkanteh.busbooking.enums;
 
-public class BusType {
+public enum BusType {
+    REGULAR,
+    EXPRESS,
+    SUPER_EXPRESS
 }

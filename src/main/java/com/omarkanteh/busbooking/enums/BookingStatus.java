@@ -1,4 +1,7 @@
 package com.omarkanteh.busbooking.enums;
 
-public class BookingStatus {
+public enum BookingStatus {
+    PENDING,
+    CONFIRMED,
+    CANCELLED
 }
