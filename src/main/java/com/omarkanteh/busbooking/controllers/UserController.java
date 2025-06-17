@@ -7,7 +7,6 @@ import com.omarkanteh.busbooking.entities.User;
 import com.omarkanteh.busbooking.enums.UserRole;
 import com.omarkanteh.busbooking.mappers.UserMapper;
 
-import com.omarkanteh.busbooking.repositories.ResetPasswordRepository;
 import com.omarkanteh.busbooking.repositories.UserRepository;
 import com.omarkanteh.busbooking.services.EmailService;
 import com.omarkanteh.busbooking.services.TokenService;

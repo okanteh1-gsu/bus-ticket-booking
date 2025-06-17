@@ -1,7 +1,6 @@
 package com.omarkanteh.busbooking.services;
 
 import com.omarkanteh.busbooking.config.JwtConfig;
-import com.omarkanteh.busbooking.config.MailConfig;
 import com.omarkanteh.busbooking.entities.User;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.JwtException;
