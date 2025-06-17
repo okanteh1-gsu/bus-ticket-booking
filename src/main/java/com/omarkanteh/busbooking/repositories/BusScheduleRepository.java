@@ -1,7 +1,6 @@
 package com.omarkanteh.busbooking.repositories;
 
 import com.omarkanteh.busbooking.entities.BusSchedule;
-import jakarta.validation.constraints.NotNull;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 

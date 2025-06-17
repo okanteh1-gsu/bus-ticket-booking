@@ -1,37 +1,28 @@
 package com.omarkanteh.busbooking.controllers;
 
-import com.omarkanteh.busbooking.dto.ChangePasswordRequest;
-import com.omarkanteh.busbooking.dto.ErrorResponse;
+
 import com.omarkanteh.busbooking.dto.RegisterUserRequest;
 import com.omarkanteh.busbooking.dto.UserDto;
-import com.omarkanteh.busbooking.entities.ResetPassword;
 import com.omarkanteh.busbooking.entities.User;
 import com.omarkanteh.busbooking.enums.UserRole;
 import com.omarkanteh.busbooking.mappers.UserMapper;
 
 import com.omarkanteh.busbooking.repositories.ResetPasswordRepository;
 import com.omarkanteh.busbooking.repositories.UserRepository;
-import com.omarkanteh.busbooking.repositories.VerificationTokenRepository;
 import com.omarkanteh.busbooking.services.EmailService;
 import com.omarkanteh.busbooking.services.TokenService;
-import jakarta.servlet.http.HttpServletRequest;
-import jakarta.servlet.http.HttpServletResponse;
 import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
 import org.springframework.data.domain.Sort;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 
 import org.springframework.web.util.UriComponentsBuilder;
 
-import java.time.LocalDateTime;
 import java.util.Map;
 import java.util.Set;
-import java.util.UUID;
 
 
 @RestController
@@ -43,7 +34,7 @@ public class UserController {
     private final PasswordEncoder passwordEncoder;
     private final EmailService emailService;
     private final TokenService tokenService;
-    private final ResetPasswordRepository resetPasswordRepository;
+
 
     // Retrieves all users with optional sorting by name or email
     @GetMapping

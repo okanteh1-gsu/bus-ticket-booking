@@ -2,12 +2,9 @@ package com.omarkanteh.busbooking.controllers;
 
 import com.omarkanteh.busbooking.dto.CreateSeatDto;
 import com.omarkanteh.busbooking.dto.SeatDto;
-import com.omarkanteh.busbooking.dto.UserDto;
 import com.omarkanteh.busbooking.entities.BusSchedule;
 import com.omarkanteh.busbooking.entities.Seat;
-import com.omarkanteh.busbooking.mappers.BusScheduleMapper;
 import com.omarkanteh.busbooking.mappers.SeatMapper;
-import com.omarkanteh.busbooking.repositories.BookingRepository;
 import com.omarkanteh.busbooking.repositories.BusScheduleRepository;
 import com.omarkanteh.busbooking.repositories.SeatRepository;
 import jakarta.transaction.Transactional;
@@ -20,7 +17,6 @@ import org.springframework.web.util.UriComponentsBuilder;
 
 import java.net.URI;
 import java.util.List;
-import java.util.Set;
 
 @RestController
 @RequestMapping("/seats")

@@ -1,12 +1,10 @@
 package com.omarkanteh.busbooking.services;
 
-import com.omarkanteh.busbooking.dto.ErrorResponse;
+
 import com.omarkanteh.busbooking.entities.BusSchedule;
 import com.omarkanteh.busbooking.entities.Seat;
 import com.omarkanteh.busbooking.repositories.SeatRepository;
 import lombok.AllArgsConstructor;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

@@ -31,5 +31,5 @@ server:
   port: 8080
 google:
   api:
-    key: "AIzaSyCNbzJfDYHuPhTj-hHXBNpZUBdwLmTrM_0"
-    url: ${GOOGLE_DISTANCE_API}
+    key: ${GOOGLE_DISTANCE_API}
+    url: ${GOOGLE_DISTANCE_URL}

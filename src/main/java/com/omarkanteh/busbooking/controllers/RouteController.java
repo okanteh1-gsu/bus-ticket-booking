@@ -1,6 +1,5 @@
 package com.omarkanteh.busbooking.controllers;
 
-import com.omarkanteh.busbooking.dto.DistanceTimeDto;
 import com.omarkanteh.busbooking.dto.RouteDto;
 import com.omarkanteh.busbooking.mappers.RouteMapper;
 import com.omarkanteh.busbooking.repositories.RouteRepository;

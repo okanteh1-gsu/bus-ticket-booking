@@ -15,7 +15,7 @@ import java.util.Date;
 public class JwtService {
 
     private final JwtConfig jwtConfig;
-    private final MailConfig mailConfig;
+
 
     public Jwt generateAccessToken(User user) {
         return getJwtToken(user, jwtConfig.getAccessTokenExpiration());
@@ -24,9 +24,7 @@ public class JwtService {
     public Jwt generateRefreshToken(User user) {
         return getJwtToken(user, jwtConfig.getRefreshTokenExpiration());
     }
-    public Jwt generateVerificationToken(User user) {
-        return getJwtToken(user, mailConfig.getVerificationTokenExpiration() );
-    }
+
 
     private Jwt getJwtToken(User user, long tokenExpiration) {
        Claims claims = Jwts.claims()
