@@ -9,8 +9,10 @@ import com.omarkanteh.busbooking.entities.BusSchedule;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.MappingTarget;
+import org.springframework.context.annotation.Primary;
 
 @Mapper(componentModel = "spring")
+@Primary
 public interface BusScheduleMapper {
 
     @Mapping(target = "busId", source = "bus.id")
